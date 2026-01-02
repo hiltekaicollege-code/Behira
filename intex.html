@@ -1,32 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Student Registration Form</title>
-    </head>
-    <body>
-        <h2>Student Registration Form</h2>
-        <form>
-            Name:<br>
-            <input type="text"><br><br>
-            Email:<br>
-            <input type="email"><br><br>
-            Phone Number:<br>
-            <input type="text"><br><br>
-            Gender:<br>
-            <input type="radio" name="gender">Male
-            <input type="radio" name="gender">Female<br><br>
-            Date of Birth:<br>
-            <input type="date"><br><br>
-            Address:<br>
-            <textarea rows="4" cols="30"></textarea><br><br>
-            Course:<br>
-            <select>
-                <option>Select Course</option>
-                <option>B.Tech</option>
-                <option>B.Sc</option>
-                <option>B.Com</option>
-                <option>Diploma</option>
-            </select><br><br>
-            <input type="Submit" value="Register">
-        </form>
-    </body>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        <label>Course:</label><br>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option>B.Tech</option>
+            <option>B.Sc</option>
+            <option>B.Com</option>
+            <option>Diploma</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
 </html>
